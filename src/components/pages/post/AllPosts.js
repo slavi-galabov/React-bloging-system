@@ -26,20 +26,24 @@ class AllPosts extends Component {
             posts = this.state.posts.map((post, i) => (
 
                 <div key={i.toString()} className={"col-sm-4"}>
-                    <div className="well">
-                        <h3 key={post.id}>
-                            <Link to={`/post/${post.id}`}>
-                                {post.title}
-                            </Link>
-                        </h3>
-                        {post.description.substring(0, 95) + (post.description.length > 95 ? '...' : '')}
-                        <div className="clearfix"></div>
-
-                        <div className="row">
-                            <Link to={`/post/${post.id}`} className="btn btn-link" title="Read more"> Read
-                                more &raquo; </Link>
-                            <ActionButtons additionalClass="btn-sm" updatePosts={this.updatePosts} post={post}
-                                           post_index={i} history={this.props.history}/>
+                    <div className="panel panel-default">
+                        <div className="panel-heading">
+                            <h3 key={post.id}>
+                                <Link to={`/post/${post.id}`}>
+                                    {post.title}
+                                </Link>
+                            </h3>
+                        </div>
+                        <div className="panel-body">
+                            {post.description.substring(0, 95) + (post.description.length > 95 ? '...' : '')}
+                        </div>
+                        <div className="panel-footer">
+                            <div className="row">
+                                <Link to={`/post/${post.id}`} className="btn btn-link" title="Read more"> Read
+                                    more &raquo; </Link>
+                                <ActionButtons additionalClass="btn-sm" updatePosts={this.updatePosts} post={post}
+                                               post_index={i} history={this.props.history}/>
+                            </div>
                         </div>
                     </div>
                 </div>
