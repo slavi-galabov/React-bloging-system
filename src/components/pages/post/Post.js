@@ -70,8 +70,8 @@ class Post extends Component {
             <div key={i.toString()} className="col-sm-12">
                 <div className="well">
                     <p>{comment.description}</p>
-                    {user_helper.getFullName(comment.username)}
-                    <time dateTime="{comment.date}">{comment.date}</time>
+                    {user_helper.getFullName(comment.username)} 
+                    <time dateTime={comment.date}> {comment.date}</time>
                 </div>
             </div>
         ));
@@ -81,8 +81,8 @@ class Post extends Component {
                 <h1>{this.state.post.title}</h1>
                 <hr/>
                 <p>{this.state.post.description}</p>
-                {user_helper.getFullName(this.state.post.author)}
-                <time dateTime="{this.state.post.date}">{this.state.post.date}</time>
+                {user_helper.getFullName(this.state.post.author)} 
+                <time dateTime={this.state.post.date}> {this.state.post.date}</time>
                 <div className="clearfix"></div>
                 <ActionButtons post={this.state.post} post_index={this.state.post_index} editText="Edit"
                                deleteText="Delete" history={this.props.history}/>
