@@ -1,0 +1,35 @@
+{
+  "siteName": "Blogging System",
+  "siteDescription": "Simple Blogging System description",
+  "welcomeText": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a eros sed urna scelerisque tempus. Donec egestas elit mauris, quis facilisis orci fermentum interdum. Fusce a metus ac elit rutrum varius. Cras at eros elit. Integer interdum magna ac venenatis convallis. Praesent at pulvinar dolor. Mauris erat mi, vehicula scelerisque iaculis nec, tincidunt at metus. Ut hendrerit elit felis, vitae vehicula mi blandit sed. Integer mauris tellus, dignissim at vulputate vel, maximus in mi. Etiam elit nulla, semper eget iaculis interdum, convallis at urna. Pellentesque augue tellus, vestibulum eu arcu quis, condimentum maximus risus.</p>",
+  "users": [
+    {
+      "username": "admin",
+      "full_name": "Administrator",
+      "password": "111",
+      "role": "admin"
+    },
+    {
+      "username": "john_doe",
+      "full_name": "John Doe",
+      "password": "222",
+      "role": "user"
+    },
+    {
+      "username": "jane_roe",
+      "full_name": "Jane Roe",
+      "password": "333",
+      "role": "user"
+    }
+  ],
+  "modalStyle": {
+    "content": {
+      "top": "50%",
+      "left": "50%",
+      "right": "auto",
+      "bottom": "auto",
+      "marginRight": "-50%",
+      "transform": "translate(-50%, -50%)"
+    }
+  }
+}
