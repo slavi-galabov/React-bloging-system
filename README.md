@@ -4,6 +4,7 @@ Open your terminal and clone the project
 <pre>git clone https://github.com/slavi-galabov/React-bloging-system.git</pre>
 go to project folder and run <code>npm i</code> to install all dependencies.
 Run <code>npm start</code> to start the project
+<p>You can see users and passwords in <code>/src/config.json</code></p>
 <h2>Task Description</h2>
 <p>The system should allow the users to login to the blog. After authentication users are relocated to the “posts page”. In the post page they can view all posts, create new posts, edit their own posts, delete posts (administrators only). A user can click on a post and go to the “post page”. In the post page a user can view all comments about the post and create new comments. In the same page the user can “like” the post.</p>
 <p>There are two types of users in the system - normal users and administrators. Normal users can create new posts, edit their own posts, like posts (only posts that are not created by the user) and comment posts. Administrators can only delete and view posts. </p>
